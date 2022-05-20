@@ -1,0 +1,57 @@
+.wrapper{
+
+/*border:solid red 1px;*/
+display:flex;
+flex-direction: row;
+/*padding:1em;*/
+}
+label{
+font-size: 1.5em;
+    padding:0.5em;  
+}
+.input{
+/*padding:0.2em;*/
+    width:30em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+   /* text-align: center;*/
+}
+.input:focus{
+border: none;
+text-align: center;
+font-size: 1.2em;
+}
+::placeholder{
+
+    font-size: 1.5em;
+}
+
+
+@media  only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px)  {
+ 
+label{
+
+font-size: 1em;
+padding-right: 10px;
+
+}
+
+    .input{
+font-size: 1em;
+       width: fit-content; 
+    }
+
+    ::placeholder{
+
+        font-size: 1em;
+    }
+    .input:focus{
+        border: none;
+        text-align: left;
+        font-size: 1em;
+        }
+
+}

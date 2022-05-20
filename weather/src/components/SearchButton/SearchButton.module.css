@@ -1,0 +1,40 @@
+.wrapper{
+
+    padding:.5em
+}
+
+.wrapper button {
+
+font-size: 1em;
+   padding: .5em;
+    border-radius: 10px;
+    border: none;
+    background-color: #32292f;
+    color:white;
+  cursor: pointer;
+}
+
+
+@media  only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px)  {
+
+.wrapper{
+
+    padding:0
+}
+
+.wrapper button{
+font-size: .8em;
+    padding: .8em;
+    border-radius: 0px;
+    margin-top: 8px;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+}
