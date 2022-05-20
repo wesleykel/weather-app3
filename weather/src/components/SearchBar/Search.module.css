@@ -16,3 +16,11 @@ input{
 label{
     font-size: 1.5em;
 }
+
+@media (max-width: 60em) {
+  input{
+
+    width:40vw
+  }
+ 
+ }

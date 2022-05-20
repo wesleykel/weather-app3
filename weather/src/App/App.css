@@ -15,6 +15,7 @@ border: 1px lightgray solid;
 margin-top: 10vh;
 padding: 2em;
 background-color: azure;
+border-radius: 5px;
 }
 
 .App nav{
@@ -39,3 +40,9 @@ justify-content: space-between;
 }
 
 
+@media (max-width: 60em) {
+  
+  .App{
+    width: 100vw;
+  }
+}

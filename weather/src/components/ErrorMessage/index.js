@@ -18,7 +18,7 @@ setDailyWeather("")
 
     return (
        <div className={style.errorMessage}>
-        {error?<p> Search {error} no match for {city} </p>: null}
+        {error?<p> Search {error}, sorry no match for {city} </p>: null}
         </div>
     )
 }
