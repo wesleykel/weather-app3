@@ -30,9 +30,10 @@ function App() {
 
 
 <ErrorMessage/>
+<div className='resultsGrid'>
 <ResultsContainer/>
 <DailyResults/>
-
+</div>
     </div>
       </WeatherContext.Provider>
   );

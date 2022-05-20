@@ -33,7 +33,7 @@ setFourDays(dailyWeather.splice(0,5))
         <div className={style.wrapper}>
         {fourDays.map((day ,i=0)=>{
   
-     return  <DailyForecast  key={i} picture={day.weather[0].icon} day={weekday[date+i] } temp={day.temp.day} low={day.temp.min} />   
+     return  <DailyForecast  key={i} descrip={day.weather[0].description} picture={day.weather[0].icon} day={weekday[date+i] } temp={day.temp.day} low={day.temp.min} />   
         })}
     
     

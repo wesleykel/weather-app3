@@ -6,4 +6,9 @@
     border:none ;
     font-size: 1em;
 cursor: pointer;
+border-radius: 20px;
+}
+
+.wrapper{
+    padding: 1em;
 }
