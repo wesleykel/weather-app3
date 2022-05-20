@@ -14,7 +14,7 @@ const SearchButton = (props) => {
     let cityArray = city.split("")
    // console.log(cityArray) 
    cityArray.forEach((element)=>{
-
+//Checks if the  user enters a number in th search bar, if they do it clears the search bar
  if(isNaN(element)=== false){
 
   setCity("")

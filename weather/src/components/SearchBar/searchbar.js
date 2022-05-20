@@ -9,7 +9,7 @@ const {city, setCity} = useContext(WeatherContext)
 
 return (
         <div className={style.wrapper}>
-        <label>Search</label>
+        <label>Search </label>
           <input className={style.input} value={city} type={"text"} onChange={(e)=>setCity(e.target.value)}  placeholder={"City"}></input>  
         </div>
     )
