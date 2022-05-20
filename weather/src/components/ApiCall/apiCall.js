@@ -1,6 +1,6 @@
 
-/*import  { useEffect ,useContext , useState} from 'react'
-import style from "./apiCall.module.css"
+import  { useEffect ,useContext , useState} from 'react'
+
 
 import { WeatherContext } from '../../App'
 import SearchButton from '../SearchButton/searchButton'
@@ -50,7 +50,7 @@ setError("")
 
 
 
-console.log(result)*/
+console.log(result)
 
 
 return(
