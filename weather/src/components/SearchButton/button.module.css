@@ -1,0 +1,9 @@
+.wrapper button {
+
+    border: 1px solid red;
+   padding: .8em;
+    background-color: chartreuse;
+    border:none ;
+    font-size: 1em;
+cursor: pointer;
+}

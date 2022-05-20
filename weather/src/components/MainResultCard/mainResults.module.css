@@ -1,4 +1,36 @@
 .wrapper{
+width: fit-content;
+border: 1px lightgray solid;
+}
+.wrapper ul{
 
-    border: 1px red solid;
+list-style: none;
+
+}
+
+
+.wrapper #temp{
+
+font-size: 4em;
+
+}
+.wrapper #feelsLike {
+font-size: 2em;
+
+}
+.wrapper #description{
+    font-size: 1.5em;
+
+}
+.imgWrapper{
+
+    background: rgb(83,205,242);
+    background: linear-gradient(0deg, rgba(83,205,242,1) 15%, rgba(182,212,228,1) 69%);
+}
+
+ img{
+
+
+    width: fit-content;
+    margin: 0 auto;
 }

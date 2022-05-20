@@ -2,4 +2,16 @@
 .App{
 width:60vw;
 margin:0 auto ;
-border: 1px lightgray solid}
+border: 1px lightgray solid;
+margin-top: 10vh;
+}
+
+.App nav{
+
+
+  display: flex;
+  flex-direction: row;
+  width:max-content;
+  margin: 0 auto;
+  gap: .5em;
+}

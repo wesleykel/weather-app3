@@ -21,10 +21,14 @@ function App() {
 
     <WeatherContext.Provider value ={{city , setCity, error, setError ,result , setResult ,dailyWeather, setDailyWeather}}>
     <div className="App">
-    
-<Title/>
+  <Title/>
+  <nav>
+
 <SearchBar/>
 <ApiCall/>
+  </nav>  
+
+
 <ErrorMessage/>
 <ResultsContainer/>
 <DailyResults/>

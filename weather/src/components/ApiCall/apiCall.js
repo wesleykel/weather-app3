@@ -10,7 +10,7 @@ const ApiCalls = () => {
     const API_LOCATION_URL =  "https://api.openweathermap.org/geo/1.0/direct" 
     const API_WEATHER_URL = "https://api.openweathermap.org/data/2.5/onecall?"
     
-    const {city ,setCity,result ,setResult ,setError,error, dailyWeather, setDailyWeather} =useContext(WeatherContext)
+    const {city ,result ,setResult ,setError, setDailyWeather} =useContext(WeatherContext)
     const [longAndLat , setLongAndLat]=useState({})
   
 
@@ -54,7 +54,7 @@ console.log(result)
 
 
 return(
-<SearchButton apiCall={getLongAndLat} label={"Click ME"}/>
+<SearchButton apiCall={getLongAndLat} label={"submit"}/>
 
 
 )

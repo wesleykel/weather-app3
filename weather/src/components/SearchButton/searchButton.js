@@ -1,5 +1,5 @@
 import React from 'react'
-
+import style from "./button.module.css"
 import { WeatherContext } from '../../App'
 import { useContext } from 'react'
 const SearchButton = (props) => {
@@ -27,7 +27,7 @@ const SearchButton = (props) => {
    
    
    return (
-        <div>
+        <div className={style.wrapper}>
      <button onClick={apiCall} type='submit'>{label}</button>    
         </div>
     )
