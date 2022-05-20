@@ -14,7 +14,7 @@ const ResultCard = ( { temperate , feelsLike, description, pic} ) => {
 
         </ul>
         <div className={style.imgWrapper}>
-       <img src={pic} alt="weather"/>     
+       <img src={ `http://openweathermap.org/img/wn/${pic}@2x.png` } alt="weather"/>     
        </div>
         </div>
     )

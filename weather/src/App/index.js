@@ -2,6 +2,7 @@
 
 import { createContext, useState , } from 'react';
 import ApiCall from '../components/ApiCall/apiCall';
+import ResultsContainer from '../components/MainResultsContainer/mainResult';
 import SearchBar from '../components/SearchBar/searchbar';
 import Title from '../components/Title';
 import './App.css';
@@ -22,6 +23,7 @@ function App() {
 <Title/>
 <SearchBar/>
 <ApiCall/>
+<ResultsContainer/>
 
     </div>
       </WeatherContext.Provider>
