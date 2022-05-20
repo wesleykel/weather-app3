@@ -1,10 +1,10 @@
 import style from "./SearchButton.module.css"
 import React from 'react'
-import { SearchContext } from '../..'
-import { useContext } from 'react'
-const SearchButton = ({prop1 , apiCall}) => {
+//import { SearchContext } from '../..'
+//import { useContext } from 'react'
+const SearchButton = ({apiCall , label}) => {
     
-    const {city, setCity} = useContext(SearchContext)
+  /*  const {city, setCity} = useContext(SearchContext)
 
     if(!city){
 
@@ -20,12 +20,12 @@ const SearchButton = ({prop1 , apiCall}) => {
   
  }
  })
-    }
+    }*/
     
     return (
         <div className={style.wrapper}>
        
-        <button onClick={apiCall} type='submit'>{prop1}</button>  
+        <button onClick={apiCall} type='submit'>{label}</button>  
      
         </div>
     )
