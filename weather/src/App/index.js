@@ -2,6 +2,8 @@
 
 import { createContext, useState , } from 'react';
 import ApiCall from '../components/ApiCall/apiCall';
+import DailyResults from '../components/DailyResultsContainer';
+import ErrorMessage from '../components/ErrorMessage';
 import ResultsContainer from '../components/MainResultsContainer/mainResult';
 import SearchBar from '../components/SearchBar/searchbar';
 import Title from '../components/Title';
@@ -19,11 +21,13 @@ function App() {
 
     <WeatherContext.Provider value ={{city , setCity, error, setError ,result , setResult ,dailyWeather, setDailyWeather}}>
     <div className="App">
-    <p>new</p>
+    
 <Title/>
 <SearchBar/>
 <ApiCall/>
+<ErrorMessage/>
 <ResultsContainer/>
+<DailyResults/>
 
     </div>
       </WeatherContext.Provider>
