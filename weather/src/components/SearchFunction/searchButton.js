@@ -2,8 +2,13 @@ import React from 'react'
 import style from "./button.module.css"
 import { WeatherContext } from '../../App'
 import { useContext } from 'react'
+import Button from '../Button/button'
+
+//Checks that there is a value in the  search bar and that the value isn't a number
+//To prevent the  api being  called unnecessarily
 const SearchButton = (props) => {
-   const {apiCall, label} = props
+   
+    const {apiCall, label} = props
     
    const {city, setCity} = useContext(WeatherContext)
 
@@ -28,7 +33,8 @@ const SearchButton = (props) => {
    
    return (
         <div className={style.wrapper}>
-     <button onClick={apiCall} type='submit'>{label}</button>    
+   {/*  <button onClick={apiCall} type='submit'>{label}</button>   */}
+     <Button  func={apiCall} label ={label}/> 
         </div>
     )
 }

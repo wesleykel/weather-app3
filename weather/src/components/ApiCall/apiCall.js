@@ -3,7 +3,7 @@ import  { useEffect ,useContext , useState} from 'react'
 
 
 import { WeatherContext } from '../../App'
-import SearchButton from '../SearchButton/searchButton'
+import SearchButton from '../SearchFunction/searchButton'
 
 const ApiCalls = () => {
     const API_KEY = process.env.REACT_APP_API_KEY   
@@ -14,7 +14,7 @@ const ApiCalls = () => {
     const [longAndLat , setLongAndLat]=useState({})
   
 
-     const getLongAndLat = ()=>{
+    const getLongAndLat = ()=>{
 
         fetch(`${API_LOCATION_URL}?q=${city}&limit=5&appid=${API_KEY}`)
         .then(response => response.json())

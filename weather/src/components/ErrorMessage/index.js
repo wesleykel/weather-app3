@@ -7,7 +7,7 @@ const ErrorMessage = () => {
    
    /*  error caught when the locatation Api throws an error because it can't search for what the user inputted */
     let {error ,city,setCity ,setError , setDailyWeather} = useContext(WeatherContext)
-    
+   console.log(error) 
    if(error && !city){
 setError("")
 setCity("")

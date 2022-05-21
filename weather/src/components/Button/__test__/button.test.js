@@ -1,11 +1,11 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import SearchButton from '../searchButton';
+import Button from "../button"
 
 
 
   it('calls onClick prop when clicked', () => {
     const handleClick = jest.fn()
-    render(<SearchButton apiCall={handleClick} label={"Click"}/>)
+    render(<Button func={handleClick} label={"Click"}/>)
     fireEvent.click(screen.getByText("Click"))
     expect(handleClick).toHaveBeenCalledTimes(1)
   })
